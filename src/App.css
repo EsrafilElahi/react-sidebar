@@ -1,38 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Klee+One&display=swap");
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  font-family: "Klee One", cursive;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  background: blueviolet;
   display: flex;
-  flex-direction: column;
+  color: antiquewhite;
+  justify-content: start;
+  padding-left: 3rem;
+  height: 4rem;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 2rem;
+}
+
+.icon {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: rgb(255, 0, 179);
+}
+
+.nav-menu {
+  background: blueviolet;
+  padding-top: 1rem;
+  padding-left: 0.5rem;
+  height: 100vh;
+  width: 13rem;
+  display: flex;
+  text-align: left;
+  top: 0;
+  left: -100%;
+  position: fixed;
+  transition: 550ms;
+  border-radius: 5px;
+}
+
+.active {
+  left: 0;
+  transition: 550ms;
+}
+
+ul {
+  list-style: none;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+li:first-child {
+  color: antiquewhite;
+  font-size: 1.7rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+li:first-child:hover {
+  background: none;
+}
+
+li {
+  margin: 15px;
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background 0.4s ease;
+}
+
+li:hover {
+  background: rgb(255, 0, 179);
+}
+
+span {
+  padding-right: 10px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+a {
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: rgb(255, 0, 179);
+  height: 90vh;
 }
